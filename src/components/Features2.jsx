@@ -4,6 +4,15 @@ import members from "../assets/images/feat2/members.svg";
 import payments from "../assets/images/feat2/payments.svg";
 import pana from "../assets/images/feat2/pana.svg";
 
+import image1 from "../assets/images/image1.png";
+
+import logo1 from "../assets/images/brands/logo1.svg";
+import logo2 from "../assets/images/brands/logo2.svg";
+import logo3 from "../assets/images/brands/logo3.svg";
+import logo4 from "../assets/images/brands/logo4.svg";
+import logo5 from "../assets/images/brands/logo5.svg";
+import logo6 from "../assets/images/brands/logo6.svg";
+
 function Features2() {
   return (
     <>
@@ -45,16 +54,72 @@ function Features2() {
         </div>
         <div className="text-center lg:text-left">
           <h2 className="text-2xl md:text-4xl font-semibold text-slate-600">
-            The unseen of spending three years at Pixelgrade
+            How to design your site footer like we did
           </h2>
           <p className="mt-4 text-gray-600 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-            amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
-            Pellentesque placerat vestibulum lorem sed porta.
+            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+            augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+            elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+            habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi
+            facilisis finibus. In euismod augue vitae nisi ultricies, non
+            aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
+            efficitur quis massa. Praesent felis est, finibus et nisi ac,
+            hendrerit venenatis libero. Donec consectetur faucibus ipsum id
+            gravida.
           </p>
           <button className="py-3 mt-6 px-8 text-sm font-medium rounded-md bg-primary text-white hover:bg-blue-700 transition">
             Learn More
           </button>
+        </div>
+      </div>
+
+      {/* Section */}
+      <div className="mt-12">
+        <div className="px-6 md:px-16 lg:px-36 py-8 w-full grid grid-cols-1 md:flex  items-center">
+          {/* Bagian Gambar */}
+          <div className="w-full md:w-3/5 flex justify-center ">
+            <img
+              src={image1}
+              alt=""
+              className="w-full sm:w-60 md:w-80 h-52 md:h-full object-cover bg-black md:bg-transparent rounded-lg"
+            />
+          </div>
+
+          {/* Bagian Teks */}
+          <div className="text-gray-600 text-center w-full md:text-left">
+            <p className="text-justify">
+              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+              lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+              enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+              enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet
+              elit at ligula molestie, nec molestie mi blandit. Suspendisse
+              cursus tellus sed augue ultrices, quis tristique nulla sodales.
+              Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+              potenti. Quisque malesuada enim sapien, vitae placerat ante
+              feugiat eget. Quisque vulputate odio neque, eget efficitur libero
+              condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
+              amet magna.
+            </p>
+            <h5 className="text-lg mt-4 font-semibold text-primary">
+              Tim Smith
+            </h5>
+            <p className="mt-2 text-sm">
+              British Dragon Boat Racing Association
+            </p>
+
+            {/* Bagian Logo */}
+            <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+              <img src={logo1} alt="Logo 1" className="w-10 sm:w-12" />
+              <img src={logo2} alt="Logo 2" className="w-10 sm:w-12" />
+              <img src={logo3} alt="Logo 3" className="w-10 sm:w-12" />
+              <img src={logo4} alt="Logo 4" className="w-10 sm:w-12" />
+              <img src={logo5} alt="Logo 5" className="w-10 sm:w-12" />
+              <img src={logo6} alt="Logo 6" className="w-10 sm:w-12" />
+              <button className="py-2 px-4 text-sm font-medium rounded-md bg-primary text-white hover:bg-blue-700 transition">
+                Meet all customers
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
