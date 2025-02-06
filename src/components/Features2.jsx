@@ -13,6 +13,8 @@ import logo4 from "../assets/images/brands/logo4.svg";
 import logo5 from "../assets/images/brands/logo5.svg";
 import logo6 from "../assets/images/brands/logo6.svg";
 
+import arrowr from "../assets/images/icon/arrowr.svg";
+
 function Features2() {
   return (
     <>
@@ -27,19 +29,56 @@ function Features2() {
         </div>
         <div className="grid grid-cols-2 gap-6 sm:gap-10 md:grid-cols-2">
           {/* Card 1 */}
-          {[members, clubs, event, payments].map((icon, index) => (
-            <div key={index} className="flex items-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
-                <img src={icon} alt="Feature Icon" />
-              </div>
-              <div>
-                <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
-                  2,245,341
-                </h2>
-                <span className="text-gray-600">Members</span>
-              </div>
+          <div className="flex items-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+              <img src={members} alt="Feature Icon" />
             </div>
-          ))}
+            <div>
+              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
+                2,245,341
+              </h2>
+              <span className="text-gray-600">Members</span>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="flex items-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+              <img src={clubs} alt="Feature Icon" />
+            </div>
+            <div>
+              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
+                46,328
+              </h2>
+              <span className="text-gray-600">Clubs</span>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="flex items-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+              <img src={event} alt="Feature Icon" />
+            </div>
+            <div>
+              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
+                828,867
+              </h2>
+              <span className="text-gray-600">Event Bookings</span>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="flex items-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+              <img src={payments} alt="Feature Icon" />
+            </div>
+            <div>
+              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
+                1,926,436
+              </h2>
+              <span className="text-gray-600">Payments</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -115,9 +154,10 @@ function Features2() {
               <img src={logo4} alt="Logo 4" className="w-10 sm:w-12" />
               <img src={logo5} alt="Logo 5" className="w-10 sm:w-12" />
               <img src={logo6} alt="Logo 6" className="w-10 sm:w-12" />
-              <button className="py-2 px-4 text-sm font-medium rounded-md bg-primary text-white hover:bg-blue-700 transition">
-                Meet all customers
-              </button>
+              <div className="flex gap-1 md:ms-6 px-3 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:bg-slate-100">
+                <button className="">Meet all customers</button>
+                <img src={arrowr} alt="" className="w-7" />
+              </div>
             </div>
           </div>
         </div>
