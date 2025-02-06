@@ -5,6 +5,9 @@ import payments from "../assets/images/feat2/payments.svg";
 import pana from "../assets/images/feat2/pana.svg";
 
 import image1 from "../assets/images/image1.png";
+import image2 from "../assets/images/image2.png";
+import image3 from "../assets/images/image3.png";
+import image4 from "../assets/images/image4.png";
 
 import logo1 from "../assets/images/brands/logo1.svg";
 import logo2 from "../assets/images/brands/logo2.svg";
@@ -18,7 +21,7 @@ import arrowr from "../assets/images/icon/arrowr.svg";
 function Features2() {
   return (
     <>
-      <div className="px-6 md:px-16 py-16 md:py-36 flex flex-col md:flex-row justify-between items-center bg-[#F5F7FA] text-center md:text-left">
+      <div className="px-6 md:px-16 py-16 mt-10 md:py-36 flex flex-col md:flex-row justify-between items-center bg-[#F5F7FA] text-center md:text-left">
         <div className="mb-8 md:mb-0">
           <h2 className="text-2xl md:text-4xl font-semibold text-slate-600">
             Helping a local <br />
@@ -157,6 +160,61 @@ function Features2() {
               <div className="flex gap-1 md:ms-6 px-3 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:bg-slate-100">
                 <button className="">Meet all customers</button>
                 <img src={arrowr} alt="" className="w-7" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* SECTION */}
+      <div className="mt-12 flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-24 xl:px-36">
+        <div className="text-center flex flex-col justify-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate-700">
+            Caring is the new marketing
+          </h2>
+          <p className="mt-2 max-w-xl mx-auto text-slate-500">
+            The Nexcent blog is the best place to read about the latest
+            membership insights, trends and more. See who is joining the
+            community, read about how our community are increasing their
+            membership income and lots more.
+          </p>
+        </div>
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+          <div className="relative">
+            <img src={image2} alt="" className="w-full" />
+            <div className="card w-full h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6">
+              <div className="flex flex-col mt-5 items-center h-full">
+                <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
+                <div className="flex justify-center text-primary mt-5">
+                  <button type="button">Read more</button>
+                  <img src={arrowr} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <img src={image3} alt="" className="w-full" />
+            <div className="card w-full h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6">
+              <div className="flex flex-col mt-5 items-center h-full">
+                <h4>
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </h4>
+                <div className="flex justify-center text-primary mt-5">
+                  <button type="button">Read more</button>
+                  <img src={arrowr} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <img src={image4} alt="" className="w-full" />
+            <div className="card w-full h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6">
+              <div className="flex flex-col mt-5 items-center h-full">
+                <h4>Revamping the Membership Model with Triathlon Australia</h4>
+                <div className="flex justify-center text-primary mt-5">
+                  <button type="button">Read more</button>
+                  <img src={arrowr} alt="" />
+                </div>
               </div>
             </div>
           </div>

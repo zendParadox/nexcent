@@ -3,7 +3,7 @@ import Icon from "../assets/Icon.svg";
 function Footer() {
   return (
     <>
-      <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+      <footer className="mt-24 w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="text-center">
           <div className="flex justify-center">
             <div className="flex mr-2  ">
