@@ -18,66 +18,110 @@ import logo6 from "../assets/images/brands/logo6.svg";
 
 import arrowr from "../assets/images/icon/arrowr.svg";
 
+import TrueFocus from "./react-bits/TrueFocus";
+import CountUp from "./react-bits/CountUp";
+
 function Features2() {
   return (
     <>
       <div className="px-6 md:px-16 py-16 mt-10 md:py-36 flex flex-col md:flex-row justify-between items-center bg-[#F5F7FA] text-center md:text-left">
         <div className="mb-8 md:mb-0">
           <h2 className="text-2xl md:text-4xl font-semibold text-slate-600">
-            Helping a local <br />
-            <span className="text-primary font-bold">
-              business reinvent itself
-            </span>
+            Helping a local business
+            <br />
+            <div className="text-primary flex justify-start mt-4">
+              {/* business reinvent itself */}
+              <TrueFocus
+                sentence="reinvent itself"
+                manualMode={false}
+                blurAmount={5}
+                borderColor="text-primary"
+                animationDuration={1}
+                pauseBetweenAnimations={1}
+              />
+            </div>
           </h2>
         </div>
         <div className="grid grid-cols-2 gap-6 sm:gap-10 md:grid-cols-2">
           {/* Card 1 */}
-          <div className="flex items-center">
-            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+          <div className="flex items-center justify-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 md:mr-4">
               <img src={members} alt="Feature Icon" />
             </div>
             <div>
-              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
-                2,245,341
+              <h2 className="text-xl w-40 md:text-3xl font-semibold text-slate-600 tracking-wider">
+                {/* 2,245,341 */}
+                <CountUp
+                  from={0}
+                  to={2245341}
+                  separator=","
+                  direction="up"
+                  duration={2}
+                  className="count-up-text"
+                />
               </h2>
               <span className="text-gray-600">Members</span>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="flex items-center">
-            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+          <div className="flex items-center justify-center ">
+            <div className="w-10 h-10 md:w-12 md:h-12 md:mr-4">
               <img src={clubs} alt="Feature Icon" />
             </div>
             <div>
-              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
-                46,328
+              <h2 className="text-xl w-40 md:text-3xl font-semibold text-slate-600 tracking-wider">
+                {/* 46,328 */}
+                <CountUp
+                  from={0}
+                  to={46328}
+                  separator=","
+                  direction="up"
+                  duration={2}
+                  className="count-up-text"
+                />
               </h2>
               <span className="text-gray-600">Clubs</span>
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="flex items-center">
-            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+          <div className="flex items-center justify-center ">
+            <div className="w-10 h-10 md:w-12 md:h-12 md:mr-4">
               <img src={event} alt="Feature Icon" />
             </div>
             <div>
-              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
-                828,867
+              <h2 className="text-xl w-40 md:text-3xl font-semibold text-slate-600 tracking-wider">
+                {/* 828,867 */}
+                <CountUp
+                  from={0}
+                  to={828867}
+                  separator=","
+                  direction="up"
+                  duration={2}
+                  className="count-up-text"
+                />
               </h2>
               <span className="text-gray-600">Event Bookings</span>
             </div>
           </div>
 
           {/* Card 4 */}
-          <div className="flex items-center">
-            <div className="w-10 h-10 md:w-12 md:h-12 mr-4">
+          <div className="flex items-center justify-center ">
+            <div className="w-10 h-10 md:w-12 md:h-12 md:mr-4">
               <img src={payments} alt="Feature Icon" />
             </div>
             <div>
-              <h2 className="text-xl md:text-3xl font-semibold text-slate-600 tracking-wider">
-                1,926,436
+              <h2 className="text-xl w-40 md:text-3xl font-semibold text-slate-600 tracking-wider">
+                {/* 1,926,436 */}
+                <CountUp
+                  from={0}
+                  to={1926436}
+                  separator=","
+                  direction="up"
+                  duration={2}
+                  className="count-up-text"
+                />
               </h2>
               <span className="text-gray-600">Payments</span>
             </div>
@@ -181,7 +225,7 @@ function Features2() {
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
           <div className="relative">
             <img src={image2} alt="" className="w-full" />
-            <div className="card w-full h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6">
+            <div className="card sm:w-full md:w-5/6 h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6 ">
               <div className="flex flex-col mt-5 items-center h-full">
                 <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
                 <div className="flex justify-center text-primary mt-5">
@@ -191,9 +235,10 @@ function Features2() {
               </div>
             </div>
           </div>
+
           <div className="relative">
             <img src={image3} alt="" className="w-full" />
-            <div className="card w-full h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6">
+            <div className="card sm:w-full md:w-5/6 h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6 ">
               <div className="flex flex-col mt-5 items-center h-full">
                 <h4>
                   What are your safeguarding responsibilities and how can you
@@ -208,7 +253,7 @@ function Features2() {
           </div>
           <div className="relative">
             <img src={image4} alt="" className="w-full" />
-            <div className="card w-full h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6">
+            <div className="card sm:w-full md:w-5/6 h-44 text-lg font-semibold text-slate-600 bg-slate-100 text-center rounded-lg shadow-xl absolute z-10 top-44 left-0 sm:left-6 px-2">
               <div className="flex flex-col mt-5 items-center h-full">
                 <h4>Revamping the Membership Model with Triathlon Australia</h4>
                 <div className="flex justify-center text-primary mt-5">
